@@ -148,14 +148,15 @@
                                 <div class="card-header">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-pills" role="tablist">
-                                        <li role="presentation" class="nav-item active"><a class="nav-link"
+                                        <li role="presentation" class="nav-item active"><a href="#" class="nav-link"
                                                 data-tab="basicinformation" id="basicinformationtab">মৌলিক তথ্য</a></li>
-                                        <li class="nav-item" role="presentation"><a id="educationtab" class="nav-link"
+                                        <li class="nav-item" role="presentation"><a href="#education" id="educationtab" class="nav-link"
                                                 data-tab="education">শিক্ষাগত যোগ্যতা</a></li>
-                                        <li class="nav-item" role="presentation"><a id="experincetab" class="nav-link"
+                                        <li class="nav-item" role="presentation"><a href="#experince" id="experincetab" class="nav-link"
                                                 data-tab="experince">অভিজ্ঞতার <span style="color: red">(যদি
-                                                    থাকে)</span></a></li>
-                                        <li class="nav-item" role="traning"><a id="traningtab" class="nav-link"
+                                                    থাকে)</span></a>
+                                                </li>
+                                        <li class="nav-item" role="traning"><a href="#traning" id="traningtab" class="nav-link"
                                                 data-tab="traning">প্রশিক্ষণ <span style="color: red">(যদি
                                                     থাকে)</span></a>
                                         </li>
@@ -419,8 +420,9 @@
                                         </form>
                                     </div>
 
-                                    <!--=========== education ==========-->
-                                    <div role="tabpanel" class="  " id="education">
+                                        <!--=========== education ==========-->
+
+                                    <div role="tabpanel" class="" id="education">
                                         <h5 style="margin-top: 10px;color: red">[ * চিহ্নিত ঘর গুলো পূরণ করা আবশ্যক]
                                         </h5>
 
@@ -428,285 +430,190 @@
                                         <form id="c-education" enctype="multipart/form-data">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <div class="extra-field-card">
-                                                        <div class="multi-card">
-                                                            <div class="dublicat-card mrg-bot-40">
-                                                                <div class="row form-group mt-3">
-                                                                    <div class="col-sm-4">
-                                                                        <label>পরীক্ষার নাম:<span
-                                                                                style="color: red">*</span></label>
+                                                    
+                                                    <div class="dublicat-card mrg-bot-40">
+                                                        <div class="row form-group mt-3"> </div>
 
-                                                                        <select class="wide form-control"
-                                                                            name="examname" id="examname">
-                                                                            <option value="">পরীক্ষার নাম নির্বাচন করুণ
-                                                                            </option>
-                                                                            <option value="এস.এস.সি">এস.এস.সি</option>
-                                                                            <option value="এইচ.এস.সি">এইচ.এস.সি</option>
-                                                                            <option value="স্নাতক">স্নাতক</option>
-                                                                            <option value="স্নাতকোত্তর">স্নাতকোত্তর
-                                                                            </option>
-                                                                            <option value="পি এইচ ডি">পি এইচ ডি</option>
-                                                                            <option
-                                                                                value="ডিপ্লোমা (এইচ.এস.সি সমমানের)">
-                                                                                ডিপ্লোমা (এইচ.এস.সি সমমানের)</option>
-                                                                            <option value="ডিপ্লোমা (স্নাতক সমমানের)">
-                                                                                ডিপ্লোমা (স্নাতক সমমানের)</option>
-                                                                            <option
-                                                                                value="ডিপ্লোমা (স্নাতকোত্তর সমমানের)">
-                                                                                ডিপ্লোমা (স্নাতকোত্তর সমমানের)</option>
-                                                                            <option value="দাখিল">দাখিল</option>
-                                                                            <option value="আলিম">আলিম</option>
-                                                                        </select>
-                                                                    </div>
-
-                                                                    <div class="col-sm-4">
-                                                                        <label>বিভাগ:<span
-                                                                                style="color: red">*</span></label>
-                                                                        <select class="wide form-control" name="section"
-                                                                            id="section">
-
-                                                                            <option value="">বিভাগ নাম নির্বাচন করুণ
-                                                                            </option>
-                                                                            <option value="বিজ্ঞান">বিজ্ঞান</option>
-                                                                            <option value="বাণিজ্য">বাণিজ্য</option>
-                                                                            <option value="মানবিক">মানবিক</option>
-                                                                            <option value="বিজ্ঞান">বিজ্ঞান</option>
-                                                                            <option value="মানবিক">মানবিক</option>
-                                                                            <option value="বাণিজ্য">বাণিজ্য</option>
-                                                                            <option value="বি.এস.সি">বি.এস.সি</option>
-                                                                            <option value="বি.এ.">বি.এ.</option>
-                                                                            <option value="বি.কম.">বি.কম.</option>
-                                                                            <option value="বি.এফ.এ.">বি.এফ.এ.</option>
-                                                                            <option value="বি.এস.এস.">বি.এস.এস.</option>
-                                                                            <option value="বি.বি.এস">বি.বি.এস</option>
-                                                                            <option value="এলএল.বি.">এলএল.বি.</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="দাখিল">দাখিল</option>
-                                                                            <option value="আলিম">আলিম</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="Others">Others</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="সিভিল">সিভিল</option>
-                                                                            <option value="ইলেকট্রিক্যাল">ইলেকট্রিক্যাল
-                                                                            </option>
-                                                                            <option value="মেকানিক্যাল">মেকানিক্যাল
-                                                                            </option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="সিভিল">সিভিল</option>
-                                                                            <option value="ইলেকট্রিক্যাল">ইলেকট্রিক্যাল
-                                                                            </option>
-                                                                            <option value="মেকানিক্যাল">মেকানিক্যাল
-                                                                            </option>
-                                                                            <option value="সিভিল">সিভিল</option>
-                                                                            <option value="মেকানিক্যাল">মেকানিক্যাল
-                                                                            </option>
-                                                                            <option value="ইলেকট্রিক্যাল">ইলেকট্রিক্যাল
-                                                                            </option>
-                                                                            <option value="বিজ্ঞান">বিজ্ঞান</option>
-                                                                            <option value="বাণিজ্য">বাণিজ্য</option>
-                                                                            <option value="মানবিক">মানবিক</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                            <option value="বিজ্ঞান">বিজ্ঞান</option>
-                                                                            <option value="বাণিজ্য">বাণিজ্য</option>
-                                                                            <option value="মানবিক">মানবিক</option>
-                                                                            <option value="অন্যান্য">অন্যান্য</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="col-sm-4">
-                                                                        <label>শিক্ষাপ্রতিষ্ঠান:<span
-                                                                                style="color: red">*</span></label>
-                                                                        <input type="text"
-                                                                            placeholder="শিক্ষাপ্রতিষ্ঠান"
-                                                                            class="form-control" id="institue"
-                                                                            name="institue" required="required">
-                                                                    </div>
-                                                                </div>
-
-                                                                <!-- <div class="row" id="otherssubject" style="display: none;">
-                                                                    <div class="col-sm-4"> </div>
-                                                                    <div class="col-sm-4">
-                                                                        <label>অন্যান্য বিষয়:<span
-                                                                                style="color: red">*</span></label>
-                                                                        <input type="text" name="sectionname" id="sectionname"
-                                                                            placeholder="অন্যান্য বিষয়" class="form-control">
-                                                                    </div>
-                                                                </div> -->
-
-                                                                <div class="row form-group mt-3">
-                                                                    <div class="col-sm-4">
-                                                                        <label>শিক্ষাবোর্ড:<span
-                                                                                style="color: red">*</span></label>
-                                                                        <select class="wide form-control" name="board"
-                                                                            id="board">
-                                                                            <option value=""> শিক্ষাবোর্ড নির্বাচন করুণ
-                                                                            </option>
-                                                                            <option value="ঢাকা">ঢাকা</option>
-                                                                            <option value="রাজশাহী">রাজশাহী</option>
-                                                                            <option value="কুমিল্লা">কুমিল্লা</option>
-                                                                            <option value="যশোর">যশোর</option>
-                                                                            <option value="চট্টগ্রাম">চট্টগ্রাম</option>
-                                                                            <option value="বরিশাল">বরিশাল</option>
-                                                                            <option value="সিলেট">সিলেট</option>
-                                                                            <option value="দিনাজপুর">দিনাজপুর</option>
-                                                                            <option value="মাদ্রাসা">মাদ্রাসা</option>
-                                                                            <option value="কারিগরি">বাংলাদেশ কারিগরি
-                                                                                শিক্ষাবোর্ড</option>
-                                                                            <option
-                                                                                value="বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয়">
-                                                                                বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয়</option>
-                                                                            <option value="জাতীয় বিশ্ববিদ্যালয়">
-                                                                                জাতীয় বিশ্ববিদ্যালয় </option>
-                                                                        </select>
-                                                                    </div>
-
-                                                                    <div class="col-sm-4">
-                                                                        <label>পাসের সন:<span
-                                                                                style="color: red">*</span></label>
-                                                                        <select class="wide form-control"
-                                                                            name="passingyear" id="passingyear">
-                                                                            <option value="2024">2024</option>
-                                                                            <option value="2023">2023</option>
-                                                                            <option value="2022">2022</option>
-                                                                            <option value="2021">2021</option>
-                                                                            <option value="2020">2020</option>
-                                                                            <option value="2019">2019</option>
-                                                                            <option value="2018">2018</option>
-                                                                            <option value="2017">2017</option>
-                                                                            <option value="2016">2016</option>
-                                                                            <option value="2015">2015</option>
-                                                                            <option value="2014">2014</option>
-                                                                            <option value="2013">2013</option>
-                                                                            <option value="2012">2012</option>
-                                                                            <option value="2011">2011</option>
-                                                                            <option value="2010">2010</option>
-                                                                            <option value="2009">2009</option>
-                                                                            <option value="2008">2008</option>
-                                                                            <option value="2007">2007</option>
-                                                                            <option value="2006">2006</option>
-                                                                            <option value="2005">2005</option>
-                                                                            <option value="2004">2004</option>
-                                                                            <option value="2003">2003</option>
-                                                                            <option value="2002">2002</option>
-                                                                            <option value="2001">2001</option>
-                                                                            <option value="2000">2000</option>
-                                                                            <option value="1999">1999</option>
-                                                                            <option value="1998">1998</option>
-                                                                            <option value="1997">1997</option>
-                                                                            <option value="1996">1996</option>
-                                                                            <option value="1995">1995</option>
-                                                                            <option value="1994">1994</option>
-                                                                            <option value="1993">1993</option>
-                                                                            <option value="1992">1992</option>
-                                                                            <option value="1991">1991</option>
-                                                                            <option value="1990">1990</option>
-                                                                            <option value="1989">1989</option>
-                                                                            <option value="1988">1988</option>
-                                                                            <option value="1987">1987</option>
-                                                                            <option value="1986">1986</option>
-                                                                            <option value="1985">1985</option>
-                                                                            <option value="1984">1984</option>
-                                                                            <option value="1983">1983</option>
-                                                                            <option value="1982">1982</option>
-                                                                            <option value="1981">1981</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="col-sm-4">
-                                                                        <label>ফলাফলের ধরন:<span
-                                                                                style="color: red">*</span></label>
-                                                                        <select class="wide form-control"
-                                                                            name="resulttype" id="resulttype">
-                                                                            <option value="সিজিপিএ">সিজিপিএ </option>
-                                                                            <option value="বিভাগ">বিভাগ</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row form-group mt-3">
-                                                                    <div class="col-sm-7">
-                                                                        <label>সার্টিফিকেট সংযুক্ত:</label>
-                                                                        <input type="file" name="uploadFile"
-                                                                            id="uploadFile" placeholder="পাসের সন"
-                                                                            class="form-control">
-                                                                        <input type="hidden" name="uploadFile_old"
-                                                                            id="uploadFile_old" placeholder="পাসের সন"
-                                                                            class="form-control">
-
-                                                                        <div style="width: 100%" id="educationfile">
-                                                                        </div>
-
-                                                                        <p class="mt-2"
-                                                                            style="font-size: 10px;color: #3d3d3d">আপনার
-                                                                            গ্রাজুয়েশন সার্টিফিকেট স্ক্যান
-                                                                            (পিডিএফ/ইমেজ) করে সংযুক্ত করুন<br> (সর্বোচ্চ
-                                                                            ১ মেগাবাইট)</p>
-                                                                    </div>
-                                                                    <div class="col-sm-5">
-                                                                        <label>ফলাফল:<span
-                                                                                style="color: red">*</span></label><br>
-                                                                        <select class="wide form-control" name="result"
-                                                                            id="result" style="display: none;">
-                                                                            <option value=""> নির্বাচন করুন</option>
-                                                                            <option value="প্রথম বিভাগ">প্রথম বিভাগ
-                                                                            </option>
-                                                                            <option value="দ্বিতীয় বিভাগ">দ্বিতীয়
-                                                                                বিভাগ</option>
-                                                                            <option value="তৃতীয় বিভাগ">তৃতীয় বিভাগ
-                                                                            </option>
-                                                                            <option value="পাস">পাস</option>
-                                                                        </select>
-                                                                        <input type="text" placeholder="ফলাফল"
-                                                                            class="form-control" name="grade"
-                                                                            id="grade">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row mt-3">
-                                                                    <div class="col-sm-12" style="text-align: right;">
-                                                                        <button type="submit" class="btn btn-primary"
-                                                                            style="font-size: 18px;">সংরক্ষণ</button>
-                                                                    </div>
-                                                                </div>
+                                                        <!-- <div class="row" id="otherssubject" style="display: none;">
+                                                            <div class="col-sm-4"> </div>
+                                                            <div class="col-sm-4">
+                                                                <label>অন্যান্য বিষয়:<span
+                                                                        style="color: red">*</span></label>
+                                                                <input type="text" name="sectionname" id="sectionname"
+                                                                    placeholder="অন্যান্য বিষয়" class="form-control">
                                                             </div>
-                                                            <div class="dublicat-box mrg-bot-40">
-                                                                <div class="row">
-                                                                    <div class="col-sm-12 col-md-12">
-                                                                        <div class="table-responsive">
-                                                                            <table class="table table-lg table-hover">
-                                                                                <thead>
-                                                                                    <tr>
-                                                                                        <th
-                                                                                            style="white-space: nowrap;">
-                                                                                            পরীক্ষার নাম</th>
-                                                                                        <th>বিভাগ</th>
-                                                                                        <th
-                                                                                            style="white-space: nowrap;">
-                                                                                            শিক্ষাপ্রতিষ্ঠান</th>
-                                                                                        <th>শিক্ষাবোর্ড</th>
-                                                                                        <th
-                                                                                            style="white-space: nowrap;">
-                                                                                            পাসের সন</th>
-                                                                                        <th
-                                                                                            style="white-space: nowrap;">
-                                                                                            ফলাফলের ধরন</th>
-                                                                                        <th>ফলাফল</th>
-                                                                                        <th>ফাইল</th>
-                                                                                        <th style="width: 7%">করণীয়</th>
-                                                                                    </tr>
-                                                                                </thead>
+                                                        </div> -->
 
-                                                                                <tbody id="educationdata">
+                                                        <div class="row form-group mt-3">
+                                                            <div class="col-sm-4">
+                                                                <label>শিক্ষাবোর্ড:<span
+                                                                        style="color: red">*</span></label>
+                                                                <select class="wide form-control" name="board"
+                                                                    id="board">
+                                                                    <option value=""> শিক্ষাবোর্ড নির্বাচন করুণ
+                                                                    </option>
+                                                                    <option value="ঢাকা">ঢাকা</option>
+                                                                    <option value="রাজশাহী">রাজশাহী</option>
+                                                                    <option value="কুমিল্লা">কুমিল্লা</option>
+                                                                    <option value="যশোর">যশোর</option>
+                                                                    <option value="চট্টগ্রাম">চট্টগ্রাম</option>
+                                                                    <option value="বরিশাল">বরিশাল</option>
+                                                                    <option value="সিলেট">সিলেট</option>
+                                                                    <option value="দিনাজপুর">দিনাজপুর</option>
+                                                                    <option value="মাদ্রাসা">মাদ্রাসা</option>
+                                                                    <option value="কারিগরি">বাংলাদেশ কারিগরি
+                                                                        শিক্ষাবোর্ড</option>
+                                                                    <option
+                                                                        value="বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয়">
+                                                                        বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয়</option>
+                                                                    <option value="জাতীয় বিশ্ববিদ্যালয়">
+                                                                        জাতীয় বিশ্ববিদ্যালয় </option>
+                                                                </select>
+                                                            </div>
+
+                                                            <div class="col-sm-4">
+                                                                <label>পাসের সন:<span
+                                                                        style="color: red">*</span></label>
+                                                                <select class="wide form-control"
+                                                                    name="passingyear" id="passingyear">
+                                                                    <option value="2024">2024</option>
+                                                                    <option value="2023">2023</option>
+                                                                    <option value="2022">2022</option>
+                                                                    <option value="2021">2021</option>
+                                                                    <option value="2020">2020</option>
+                                                                    <option value="2019">2019</option>
+                                                                    <option value="2018">2018</option>
+                                                                    <option value="2017">2017</option>
+                                                                    <option value="2016">2016</option>
+                                                                    <option value="2015">2015</option>
+                                                                    <option value="2014">2014</option>
+                                                                    <option value="2013">2013</option>
+                                                                    <option value="2012">2012</option>
+                                                                    <option value="2011">2011</option>
+                                                                    <option value="2010">2010</option>
+                                                                    <option value="2009">2009</option>
+                                                                    <option value="2008">2008</option>
+                                                                    <option value="2007">2007</option>
+                                                                    <option value="2006">2006</option>
+                                                                    <option value="2005">2005</option>
+                                                                    <option value="2004">2004</option>
+                                                                    <option value="2003">2003</option>
+                                                                    <option value="2002">2002</option>
+                                                                    <option value="2001">2001</option>
+                                                                    <option value="2000">2000</option>
+                                                                    <option value="1999">1999</option>
+                                                                    <option value="1998">1998</option>
+                                                                    <option value="1997">1997</option>
+                                                                    <option value="1996">1996</option>
+                                                                    <option value="1995">1995</option>
+                                                                    <option value="1994">1994</option>
+                                                                    <option value="1993">1993</option>
+                                                                    <option value="1992">1992</option>
+                                                                    <option value="1991">1991</option>
+                                                                    <option value="1990">1990</option>
+                                                                    <option value="1989">1989</option>
+                                                                    <option value="1988">1988</option>
+                                                                    <option value="1987">1987</option>
+                                                                    <option value="1986">1986</option>
+                                                                    <option value="1985">1985</option>
+                                                                    <option value="1984">1984</option>
+                                                                    <option value="1983">1983</option>
+                                                                    <option value="1982">1982</option>
+                                                                    <option value="1981">1981</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <label>ফলাফলের ধরন:<span
+                                                                        style="color: red">*</span></label>
+                                                                <select class="wide form-control"
+                                                                    name="resulttype" id="resulttype">
+                                                                    <option value="সিজিপিএ">সিজিপিএ </option>
+                                                                    <option value="বিভাগ">বিভাগ</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row form-group mt-3">
+                                                            <div class="col-sm-7">
+                                                                <label>সার্টিফিকেট সংযুক্ত:</label>
+                                                                <input type="file" name="uploadFile"
+                                                                    id="uploadFile" placeholder="পাসের সন"
+                                                                    class="form-control">
+                                                                <input type="hidden" name="uploadFile_old"
+                                                                    id="uploadFile_old" placeholder="পাসের সন"
+                                                                    class="form-control">
+
+                                                                <div style="width: 100%" id="educationfile">
+                                                                </div>
+
+                                                                <p class="mt-2"
+                                                                    style="font-size: 10px;color: #3d3d3d">আপনার
+                                                                    গ্রাজুয়েশন সার্টিফিকেট স্ক্যান
+                                                                    (পিডিএফ/ইমেজ) করে সংযুক্ত করুন<br> (সর্বোচ্চ
+                                                                    ১ মেগাবাইট)</p>
+                                                            </div>
+                                                            <div class="col-sm-5">
+                                                                <label>ফলাফল:<span
+                                                                        style="color: red">*</span></label><br>
+                                                                <select class="wide form-control" name="result"
+                                                                    id="result" style="display: none;">
+                                                                    <option value=""> নির্বাচন করুন</option>
+                                                                    <option value="প্রথম বিভাগ">প্রথম বিভাগ
+                                                                    </option>
+                                                                    <option value="দ্বিতীয় বিভাগ">দ্বিতীয়
+                                                                        বিভাগ</option>
+                                                                    <option value="তৃতীয় বিভাগ">তৃতীয় বিভাগ
+                                                                    </option>
+                                                                    <option value="পাস">পাস</option>
+                                                                </select>
+                                                                <input type="text" placeholder="ফলাফল"
+                                                                    class="form-control" name="grade"
+                                                                    id="grade">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-3">
+                                                            <div class="col-sm-12" style="text-align: right;">
+                                                                <button type="submit" class="btn btn-primary"
+                                                                    style="font-size: 18px;">সংরক্ষণ</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dublicat-box mrg-bot-40">
+                                                        <div class="row">
+                                                            <div class="col-sm-12 col-md-12">
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-lg table-hover">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th
+                                                                                    style="white-space: nowrap;">
+                                                                                    পরীক্ষার নাম</th>
+                                                                                <th>বিভাগ</th>
+                                                                                <th
+                                                                                    style="white-space: nowrap;">
+                                                                                    শিক্ষাপ্রতিষ্ঠান</th>
+                                                                                <th>শিক্ষাবোর্ড</th>
+                                                                                <th
+                                                                                    style="white-space: nowrap;">
+                                                                                    পাসের সন</th>
+                                                                                <th
+                                                                                    style="white-space: nowrap;">
+                                                                                    ফলাফলের ধরন</th>
+                                                                                <th>ফলাফল</th>
+                                                                                <th>ফাইল</th>
+                                                                                <th style="width: 7%">করণীয়</th>
+                                                                            </tr>
+                                                                        </thead>
+
+                                                                        <tbody id="educationdata">
 
 
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </div>
-                                                                    </div>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                        
                                                     <div style="width: 100%;text-align: right;margin-top: 15px;">
                                                         <button type="button" class="btn btn-warning profilebutton"
                                                             name="next" data-tab="experince" value="experince">Next
